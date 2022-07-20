@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images-icons-oticas/oculos-escuros.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/fonts-originsix/style.css">
+    
+    <title>Ótica FiveX</title>
+</head>
+<body>
+   
+    <header id="header"  data-js="header">
+     <nav class="container"  data-js="container-menu">
+        <div>
+            <a class="logo" href="#home"><p class="logo-in">Ótica</p>  <br> <span>FiveX</span></a>
+        </div> 
+       <div class="menu grid">
+           <ul class="grid">
+               <li><a class="title" href="#home">Ínicio </a></li>
+               <li><a class="title" href="#about">Sobre </a></li>
+               <li><a class="title" href="#services">Serviços</a></li>
+               <li><a class="title" href="#contact">Contato </a></li>
+               
+           </ul>
+       </div>
+       <div class="toggle icon-menu" data-js="toggles"></div>
+       <div class="toggle icon-close" data-js="toggles"></div>
+     </nav>
+    </header>
+   <main>
+       <section class="section" id="home">
+           <div class="container grid">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets_images/people-otica1-cut.jpg" class="d-block w-100" alt="Uma jovem sorrindo usando um dos modelos de Óculos da Ótica CarÓtica.">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets_images/people-otica-2-cut.jpg" class="d-block w-100" alt="Um homem jovem sorrindo usando um dos modelos de Óculos da Ótica CarÓtica.">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets_images/people-otica-3-cut.jpg" class="d-block w-100" alt="Uma criança ruiva sorrindo usando um dos modelos de Óculos da Ótica CarÓtica">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+               </div>
+               <div class="text">
+                 
+                <h2 class="title">Temos diversas armações lindas disponíveis aqui na Ótica FiveX.</h2>
+                <p>Pensamos em cada detalhe para você! Aqui na ótica trabalhamos com as melhores e eficientes lentes para proteção dos seus olhos!</p>
+                <a class="button" href="#contact">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z" fill="black"/>
+                    </svg>
+                        Contate-nos
+                    </a>
+                 </div>
+               </div>
+            </div>
+       </section>
+       
+       <div class="divider-2">
+           
+       </div>
+       
+    <section class="section" id="about">
+        <div class="container grid">
+           <div class="col-b">
+           <div class="image">
+               <img src="./assets_images/about-otica.jpg" alt="">
+           </div>
+           </div>
+           <div class="text">
+             <div class="col-a">
+                <h2 class="title">Sobre nós</h2>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, animi eos quo aspernatur numquam eius? Quis unde animi non doloribus sint. Culpa, reiciendis tenetur! Odit vel mollitia tempore iste quod!
+
+                </p>
+                   
+             </div>
+           </div>
+        </div>  
+    </section>
+       <div class="divider-2">
+       </div>
+       <section class="section" id="services">
+          <div class="container grid">
+              <header>
+                  <h2 class="title">Serviços</h2>
+                  <p class="handle">
+                    Somos uma <strong> Ótica </strong> tradicional com mais <br> de 30 anos no mercado, <br> com técnicos especializados. <br> Armações, lentes de grau e óculos de sol.
+                  </p>
+              </header>
+              <div class="cards grid">
+                <div class="card">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./assets-oculos-img-service/otica1.jpg" class="d-block w-100" alt="Óculos com armações modernas da Ótica CarÓtica">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets-oculos-img-service/otica2.jpg" class="d-block w-100" alt="Óculos com armações modernas da Ótica CarÓtica">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets-oculos-img-service/otica3.jpg" class="d-block w-100" alt="Óculos com armações modernas da Ótica CarÓtica">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets-oculos-img-service/otica4.jpg" class="d-block w-100" alt="Óculos com armações modernas da Ótica CarÓtica">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      
+                      <h3 class="title">Óculos com Armações modernas.</h3>
+                      
+                      <p style="color: var(--base-color) ;" > 
+                         Armação em metal.
+                      </p>
+                      
+                      <p>
+                        Os óculos de metais estão presentes em vários modelos, sendo discretos e ideais para rostos delicados, principalmente de mulheres. Podem ser em armações prateadas, douradas ou em alguns casos coloridas.
+                      </p>
+                      
+                      <p style="color: var(--base-color) ;">
+                         Armação em plástico.
+                      </p>
+                      
+                      <p>
+                        As armações de plástico são mais grossas, sendo que os modelos grandes são recomendados para pessoas com o rosto triangular, pois preenchem o rosto. São mais comuns os fabricados em acetato, que oferecem resistência e durabilidade.
+                      </p>
+                      
+                      <p style="color: var(--base-color) ;">
+                         Armação em alumínio.
+                      </p>
+                      
+                      <p>
+                        As armações em alumínio são esportivas, com modelos geralmente voltados para o público masculino. Elas realmente são indicadas para quem gosta de atividades físicas, pois são leves e despojadas, com linhas marcadas.
+                        <br> Armações mais finas dão mais aderência, se tornando discretas no rosto. Já as mais grossas devem ser utilizadas com moderação.
+                      </p>
+                     
+                </div>
+                <div class="card">
+                       <i class="icon-img">
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                        width="50%" height="50%" viewBox="0 0 512.000000 512.000000"
+                                        preserveAspectRatio="xMidYMid meet">
+                                    
+                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                    fill="gold" stroke="none">
+                                    <path d="M980 3523 c-147 -14 -251 -27 -350 -44 -227 -38 -507 -108 -521 -131
+                                    -14 -21 -11 -322 3 -336 7 -7 40 -12 79 -12 l66 0 12 -77 c32 -200 121 -597
+                                    152 -675 11 -26 1 -39 -205 -285 -119 -142 -216 -266 -216 -276 0 -56 116
+                                    -102 241 -95 117 7 168 37 315 187 l121 124 84 -42 c104 -51 166 -67 318 -81
+                                    243 -24 508 33 725 154 187 105 365 276 474 456 l39 65 184 26 c101 14 203 28
+                                    226 31 l42 6 47 -81 c256 -449 732 -705 1225 -657 152 14 214 30 318 81 l84
+                                    42 122 -124 c147 -150 197 -180 314 -187 125 -7 241 39 241 95 0 10 -97 134
+                                    -216 276 -206 246 -216 259 -205 285 31 78 120 475 152 675 l12 77 66 0 c39 0
+                                    72 5 79 12 14 14 17 315 3 336 -9 15 -130 50 -296 87 -288 64 -463 85 -757 92
+                                    -275 6 -447 -4 -672 -42 -132 -22 -197 -38 -486 -115 -100 -27 -132 -31 -240
+                                    -31 -108 0 -140 4 -240 31 -364 98 -516 128 -755 150 -101 9 -502 12 -585 3z
+                                    m595 -114 c215 -19 419 -58 642 -123 158 -46 217 -56 343 -56 126 0 185 10
+                                    343 56 279 82 465 113 796 134 330 21 782 -28 1132 -124 l84 -22 3 -82 3 -82
+                                    -56 0 c-80 0 -97 -20 -113 -130 -40 -267 -136 -660 -187 -769 -48 -100 -151
+                                    -204 -255 -255 -110 -54 -197 -70 -380 -70 -138 0 -167 3 -262 27 -220 57
+                                    -381 144 -536 291 -154 146 -251 308 -337 567 -50 150 -83 202 -148 236 -45
+                                    23 -139 20 -181 -6 -67 -42 -91 -82 -141 -230 -86 -259 -183 -421 -337 -567
+                                    -155 -147 -316 -234 -536 -291 -95 -24 -124 -27 -262 -27 -181 0 -267 16 -378
+                                    69 -103 49 -208 154 -257 256 -51 109 -147 502 -187 769 -16 110 -33 130 -113
+                                    130 l-56 0 3 82 3 82 84 22 c411 112 851 151 1286 113z m1052 -520 c18 -18
+                                    109 -256 100 -265 -1 -2 -72 -12 -157 -24 -85 -11 -165 -23 -177 -25 -21 -5
+                                    -19 2 27 141 49 146 67 179 105 195 29 12 76 2 102 -22z m-2074 -867 c20 -24
+                                    37 -47 37 -51 0 -17 -238 -240 -272 -254 -49 -21 -168 -27 -168 -9 0 5 75 98
+                                    167 207 166 198 167 198 182 175 9 -14 33 -44 54 -68z m4252 -109 c91 -108
+                                    165 -200 165 -205 0 -8 -39 -12 -100 -8 -62 3 -113 38 -230 155 l-114 115 22
+                                    27 c13 16 37 47 54 71 18 23 33 42 35 42 1 0 77 -88 168 -197z"/>
+                                    <path d="M1003 3279 c-166 -11 -316 -35 -366 -58 -66 -29 -123 -86 -156 -154
+                                    -48 -97 -49 -144 -6 -352 79 -389 118 -496 221 -605 123 -130 272 -177 534
+                                    -167 223 8 388 61 568 180 201 135 349 321 433 546 28 72 33 100 33 176 1 83
+                                    -2 96 -33 159 -37 76 -99 141 -163 174 -163 81 -660 128 -1065 101z m677 -124
+                                    c133 -17 307 -52 333 -67 37 -20 99 -83 120 -122 35 -65 30 -178 -11 -281 -50
+                                    -126 -125 -239 -226 -341 -102 -102 -149 -136 -264 -194 -251 -125 -595 -140
+                                    -779 -33 -57 33 -131 116 -158 178 -43 98 -145 541 -145 628 0 59 43 142 92
+                                    177 46 33 96 46 243 60 61 5 126 12 145 14 79 9 541 -4 650 -19z"/>
+                                    <path d="M1048 3110 c-10 -6 -18 -23 -18 -38 0 -57 1 -57 237 -59 217 -1 396
+                                    -17 576 -50 70 -12 97 -22 121 -44 28 -25 31 -33 31 -87 0 -65 15 -92 50 -92
+                                    51 0 76 78 51 163 -15 52 -64 111 -114 136 -27 14 -134 36 -282 57 -133 19
+                                    -627 30 -652 14z"/>
+                                    <path d="M3600 3280 c-136 -11 -364 -44 -446 -66 -129 -33 -210 -98 -265 -210
+                                    -31 -63 -34 -76 -33 -159 0 -76 5 -104 33 -176 129 -346 416 -604 778 -700
+                                    112 -30 337 -37 458 -15 129 24 219 71 299 156 103 110 143 218 222 608 42
+                                    211 41 257 -9 355 -39 75 -115 140 -190 162 -136 39 -602 64 -847 45z m675
+                                    -125 c83 -10 145 -23 173 -36 69 -34 122 -119 122 -198 0 -85 -103 -530 -145
+                                    -626 -27 -62 -101 -145 -158 -178 -139 -81 -397 -94 -611 -32 -93 27 -217 84
+                                    -294 137 -81 54 -224 207 -280 298 -82 133 -116 229 -116 325 -1 63 4 89 21
+                                    121 21 39 83 103 120 122 44 24 307 68 513 86 97 9 532 -4 655 -19z"/>
+                                    <path d="M3636 3107 c-23 -17 -24 -66 -3 -82 11 -8 87 -12 234 -13 124 0 279
+                                    -7 358 -16 128 -15 142 -18 163 -41 12 -15 22 -39 22 -55 0 -20 8 -35 25 -46
+                                    23 -15 27 -15 51 1 24 16 26 21 22 74 -5 66 -32 112 -81 138 -55 28 -308 52
+                                    -553 53 -168 0 -224 -3 -238 -13z"/>
+                                    </g>
+                                </svg>
+                       </i>
+                       <h3 class="title">A importância de uma armação de qualidade.</h3>
+                       <p>
+                            Além de oferecer um toque de personalidade ao visual, a armação dos seus óculos precisa ser capaz de segurar as lentes, sem causar desconforto ao seu rosto ou à sua visão, a fim de torná-la completamente funcional.
+
+                       </p>
+                </div>
+                <div class="card">
+                        <i class="icon-img">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                width="50%" height="50%" viewBox="0 0 512.000000 512.000000"
+                                preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                fill="gold" stroke="none">
+                                <path d="M3020 5110 c-602 -85 -1076 -544 -1175 -1139 -21 -125 -16 -383 10
+                                -501 56 -253 183 -491 357 -669 209 -213 430 -335 718 -395 l105 -22 3 -264
+                                c1 -174 6 -268 13 -277 6 -7 23 -13 38 -13 21 0 91 65 366 340 285 286 352
+                                348 415 384 293 170 508 427 620 741 57 163 73 260 74 450 0 138 -4 189 -22
+                                272 -61 281 -181 503 -382 703 -192 192 -417 314 -685 372 -104 22 -353 32
+                                -455 18z m470 -133 c368 -97 657 -322 823 -644 97 -187 139 -362 141 -573 0
+                                -163 -12 -251 -56 -390 -97 -304 -312 -572 -577 -717 -53 -29 -125 -95 -373
+                                -342 l-308 -306 0 225 c0 124 -4 231 -9 239 -5 8 -55 21 -121 32 -580 97
+                                -1009 560 -1059 1139 -33 391 108 757 394 1028 179 169 398 280 644 327 122
+                                23 381 14 501 -18z"/>
+                                <path d="M3115 4746 c-86 -37 -134 -113 -135 -209 0 -187 218 -291 359 -170
+                                57 48 82 101 82 172 1 93 -50 171 -133 205 -45 19 -132 20 -173 2z m153 -112
+                                c60 -39 65 -128 11 -180 -25 -24 -39 -29 -79 -29 -43 0 -54 5 -82 33 -27 27
+                                -33 40 -33 76 0 99 100 153 183 100z"/>
+                                <path d="M2986 4118 c-14 -20 -16 -95 -16 -618 0 -523 2 -598 16 -618 15 -21
+                                20 -22 213 -22 140 0 200 3 209 12 9 9 12 163 12 630 0 600 -1 618 -19 628
+                                -12 6 -98 10 -210 10 -185 0 -190 -1 -205 -22z m329 -618 l0 -535 -117 -3
+                                -118 -3 0 541 0 541 118 -3 117 -3 0 -535z"/>
+                                <path d="M2185 1874 c-60 -10 -140 -36 -204 -69 -85 -42 -224 -125 -232 -136
+                                -3 -6 -335 -9 -790 -9 -694 0 -787 -2 -807 -16 l-22 -15 0 -729 c0 -649 2
+                                -730 16 -744 14 -14 101 -16 810 -16 872 0 837 -2 869 60 10 19 15 58 15 116
+                                l0 86 93 -5 c91 -4 96 -6 527 -176 239 -94 469 -181 510 -192 276 -74 608 3
+                                828 194 92 79 1111 1057 1136 1090 78 103 72 264 -14 369 -70 85 -222 119
+                                -316 70 -23 -12 -225 -150 -449 -307 -224 -157 -408 -285 -409 -283 -1 2 -10
+                                28 -19 59 -20 66 -81 140 -137 169 -59 30 -1093 447 -1152 465 -55 16 -200 27
+                                -253 19z m205 -115 c45 -10 960 -377 1100 -441 85 -39 124 -78 141 -140 20
+                                -76 -23 -178 -91 -213 -64 -33 -55 -35 -899 240 -173 56 -188 57 -211 14 -26
+                                -48 -10 -55 491 -218 261 -85 495 -156 520 -159 27 -2 70 3 103 12 56 17 101
+                                53 176 144 24 29 828 599 915 649 67 38 142 26 197 -33 34 -37 48 -74 48 -130
+                                0 -93 33 -58 -710 -764 -297 -283 -480 -450 -528 -481 -84 -55 -199 -102 -291
+                                -119 -92 -17 -244 -14 -331 6 -41 9 -249 86 -463 171 -500 198 -544 213 -641
+                                213 l-76 0 0 548 0 548 88 51 c118 69 143 81 204 97 63 17 195 20 258 5z
+                                m-1300 -859 l0 -650 -425 0 -425 0 0 650 0 650 425 0 425 0 0 -650z m640 0 l0
+                                -650 -265 0 -265 0 0 650 0 650 265 0 265 0 0 -650z"/>
+                                </g>
+                            </svg>
+                        </i>
+                        <h3 class="title">A importância do uso de óculos de grau.</h3>
+                        <p>
+                            Se você está tendo problemas para ler, ver à distância durante a execução de seus trabalhos diários é possível que você precise de óculos de grau. Se você já usa óculos, sua visão pode ter mudado e você precisa de uma nova receita. É importante consultar um médico para entender por que você está tendo problemas para enxergar adequadamente.
+                           <br> <br> Muitas pessoas têm problemas para ver objetos próximos ou distantes. Isso é chamado de erro de refração e é o tipo mais comum de problema ocular. Os erros de refração são causados pela forma dos olhos serem anormais. Isso significa que o olho não dobra a luz do jeito certo para criar uma imagem clara.
+                           <br> Usar óculos é uma maneira de corrigir sua visão e ajudar seus olhos a verem claramente.
+                           
+                        </p>
+                </div>
+              </div>
+          </div> 
+       </section>
+      
+       <div class="divider-2"></div>
+
+    <section class="section" id="contact">
+        <div class="container grid">
+                <header>
+                    <h2 class="title">
+                        Entre em contato <br> com a gente!
+                    </h2>
+                </header>
+                <p class="center">
+                    Entre em contato com a <span> Ótica FiveX</span>, <br> para obter mais informações sobre nosso trabalho <br> e tirar suas dúvidas. 
+                </p>
+                <a target="_blank" class="button" href="https://wa.me/5534992095260">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z" fill="black"/>
+                    </svg>
+                       Contate-nos
+                </a>
+            <div>
+            
+            
+                <p class="handle-phone">
+                    <svg width="24" height="20" viewBox="0 -1.1 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.9999 16.9201V19.9201C22.0011 20.1986 21.944 20.4743 21.8324 20.7294C21.7209 20.9846 21.5572 21.2137 21.352 21.402C21.1468 21.5902 20.9045 21.7336 20.6407 21.8228C20.3769 21.912 20.0973 21.9452 19.8199 21.9201C16.7428 21.5857 13.7869 20.5342 11.1899 18.8501C8.77376 17.3148 6.72527 15.2663 5.18993 12.8501C3.49991 10.2413 2.44818 7.27109 2.11993 4.1801C2.09494 3.90356 2.12781 3.62486 2.21643 3.36172C2.30506 3.09859 2.4475 2.85679 2.6347 2.65172C2.82189 2.44665 3.04974 2.28281 3.30372 2.17062C3.55771 2.05843 3.83227 2.00036 4.10993 2.0001H7.10993C7.59524 1.99532 8.06572 2.16718 8.43369 2.48363C8.80166 2.80008 9.04201 3.23954 9.10993 3.7201C9.23656 4.68016 9.47138 5.62282 9.80993 6.5301C9.94448 6.88802 9.9736 7.27701 9.89384 7.65098C9.81408 8.02494 9.6288 8.36821 9.35993 8.6401L8.08993 9.9101C9.51349 12.4136 11.5864 14.4865 14.0899 15.9101L15.3599 14.6401C15.6318 14.3712 15.9751 14.1859 16.3491 14.1062C16.723 14.0264 17.112 14.0556 17.4699 14.1901C18.3772 14.5286 19.3199 14.7635 20.2799 14.8901C20.7657 14.9586 21.2093 15.2033 21.5265 15.5776C21.8436 15.9519 22.0121 16.4297 21.9999 16.9201Z" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                        
+                    (34) 3241-9491 / (34)3241-3883 
+
+                </p>
+            </div>
+             
+            <div>
+            
+               <p class="handle">
+                <svg width="24" height="20" viewBox="0 -0.6 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                    
+                Praça Manoel Bonito, 109  <br> &nbsp; &nbsp; &nbsp; &nbsp; Centro, Araguari - MG, 38440-076
+               </p>
+            </div>
+             
+            <div>
+            
+                <p class="handle">
+                    
+                    <svg width="24" height="20" viewBox="0 -3 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 6L12 13L2 6" stroke="gold" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    oticafivex@outlook.com
+
+                </p>
+            </div>
+            <div class="image" >
+                <div class="col-b">
+                    <img src="./assets_images/contact-men.jpg" alt="Um homem de camisa branca segurando um celular">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+        <div class="divider-2"></div>
+
+        <footer class="section">
+            <div class="container grid" >
+
+           
+                <div class="card-border-off" >
+                    
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item-border-off">©2022 Ótica FiveX</li>
+                    <li class="list-group-item-border-off">Todos os direitos reservados.</li>
+                    
+                    </ul>
+                </div>
+                <div class="social">
+                    <a target="_blank" href="www.instagram.com">
+                        <i class="icon-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/tiago.vilela.90/">
+                        <i class="icon-facebook"></i>
+                    </a>
+                    
+                </div>
+            </div>     
+        </footer>
+     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="main.js"></script>
+  </body>
+</html>

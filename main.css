@@ -1,0 +1,797 @@
+/*============== RESET ================*/
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul {
+    list-style: none;
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem;
+}
+/*============== BASE ================*/
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
+  
+    
+}
+
+body {
+    font: 400 1.5rem "DM Sans" , sans-serif;
+    color: var(--text-color);
+    background: var(--body-color);
+    -webkit-font-smoothing: antialiased;
+  
+    overflow-x: hidden ;
+}
+
+.title {
+    font: 700 1.8rem "Poppins" , sans-serif;
+    color: var(--title-color);
+    -webkit-font-smoothing: auto;
+}
+
+a.button {
+    background-color: var(--base-color);
+    color: var(--text-color-light);
+    height: 5.6rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 3.2rem;
+    border-radius: 4rem;
+    font: 500 1.6rem 'DM Sans' , sans-serif;
+    transition: background 0.3s;
+
+}
+
+.button:hover {
+ background: var(--base-color-alt);
+
+}
+
+.divider-1 {
+    height: 1px;
+    background: linear-gradient(
+    270deg, 
+    hsla(var(--hue), 36%, 57%, 1) 
+    hsla(var(--hue), 65%, 88%, 0.34) 
+    );
+}
+
+.divider-2 {
+    height: 1px;
+    background: linear-gradient(
+    270deg, 
+    hsla(var(--hue), 65%, 88%, 0.34), 
+    hsla(var(--hue), 36%, 57%, 1) 
+    );
+}
+
+/*============== ? ================*/
+:root {
+    overflow-x: hidden;
+    font-size: 57%;
+
+    --header-height: 7.2rem;
+    
+
+  /* colors */
+  --hue: 55;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 78% 50%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: rgb(12, 1, 1);
+  --text-color-light: rgb(8, 0, 0);
+  --body-color: hsl(0 0% 98%);
+}
+/*============== LAYOUT ================*/
+
+.container {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+}
+
+
+.grid {
+    display:grid;
+    gap: 2rem;
+}
+
+.section {
+    padding: 4.5rem 0;
+}
+
+.section .title{
+    margin-bottom: 1.6rem;
+}
+
+.section header {
+    margin-bottom: 4.4rem ;
+}
+
+.section header strong {
+    color: var(--base-color);
+}
+
+#header {
+    border-bottom: 1px solid   #E4E4E4;
+    margin-bottom: 3.2rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--body-color);
+    width: 100%;
+}
+
+#header.scroll {
+    box-shadow: 0 0 12px  rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin-top: var(--header-height);
+    
+    
+}
+
+
+/*============== LOGO ================*/
+
+.logo {
+    font: 700 2.1rem 'Poppins' , sans-serif; 
+    color: var(--title-color);
+
+}
+
+.logo span {
+    color: var(--base-color);
+    font: 700 3rem 'Dacing Script' , sans-serif;
+    
+
+}
+
+p.logo-in {
+    margin-bottom: -3.5rem;
+    font: 700 1.3rem 'Poppins' , sans-serif; 
+}
+
+/*============== NAVIGATION ================*/
+
+nav {
+    height: var(--header-height) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    margin-top: -14rem ;
+  
+}
+
+nav ul li a {
+    transition: color 0.2s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: var(--base-color);
+
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--base-color);
+
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+
+    transition: width .2s ;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+
+}
+
+nav .menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*============== MOSTRAR MENU ================*/
+nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+    background: var(--body-color);
+
+    height: 100vh;
+    width: 100vw;
+    
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav.show .menu {
+    display: grid;
+    place-content: center;
+    
+    
+    
+}
+
+nav.show ul.grid {
+    gap: 4.8rem;
+    
+    
+}
+
+/*============== TOGGLE MENU ================*/
+.toggle {
+    color: var(--base-color);
+    font-size: 2.4rem;
+    
+    cursor: pointer;
+   
+}
+
+nav .icon-close {
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    right: 2.21rem;
+    top: 3.8rem;
+    transition: 0.2s;
+   
+}
+
+nav.show div.icon-close {
+    visibility: visible;
+    opacity: 1;
+    top: 2.8rem;
+}
+
+/*============== HOME ================*/
+
+#home {
+    overflow: hidden;
+    
+}
+#home .container {
+    margin: 0;
+    
+}
+
+#home .image {
+    position: relative;
+}
+
+#home .image::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -16.8%;
+    left: 16.7%;
+    z-index: 0;
+    
+}
+
+#home .image img,
+#home .image::before {
+    border-radius: 0.4rem;
+}
+
+#home .image img {
+    position: relative;
+    right: 2rem;
+}
+
+#home .text {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    text-align: center;
+    
+}
+
+#home .text h1 {
+    margin-bottom: 1.6rem;
+}
+
+#home .text p {
+    margin-bottom: 3.2rem;
+    max-width: 100%;
+}
+
+/*============== ABOUT================*/
+#about {
+    background: white;
+}
+
+#about .container {
+    margin: 0;
+    
+}
+
+#about .image {
+    position: relative;
+}
+
+#about .image::before {
+    display: none;
+}
+
+
+#about .image img,
+#about .image::before {
+    border-radius: 0.4rem;
+}
+
+#about .image img {
+    position: relative;
+   
+}
+
+#about .text {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    
+}
+
+#about h2 {
+    font-size: 2rem;
+    
+}
+
+/*============== SERVICES================*/
+
+#services h2 {
+    font-size: 2rem;
+    
+}
+
+#services h3.title {
+    margin-top: 2rem;
+}
+
+#services .handle p {
+    text-align: center;
+}
+
+.cards.grid {
+    gap: 2.4rem;
+}
+
+.card {
+    padding: 5.8rem 3.2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08) ;
+    border-bottom: 0.25rem solid var(--base-color);
+    border-radius: 00.25rem 0.25rem 0 0;
+    text-align: center;
+}
+
+.card i {
+    display: block;
+    margin-bottom: 3.5rem;
+    font-size: 5rem;
+    color: var(--base-color);
+}
+
+.card .title {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+    
+}
+i.icon-img {
+   
+    margin-left: 2rem;
+    margin-bottom: -2rem;
+    
+}
+
+
+
+/*============== CONTACT ================*/
+
+#contact h2 {
+    font-size: 2rem;
+}
+
+
+
+#contact grid{
+    gap: 5rem;
+}
+
+#contact header h2 {
+    font: 700 2rem "Poppins" , sans-serif;
+}
+
+
+#contact .handle-phone   {
+    margin-top: 4rem;
+}
+
+#contact svg {
+ 
+ margin-top: 0rem;
+  margin-bottom: 0;
+  
+  
+}
+
+#contact a.button {
+    width: 20rem;
+}
+
+#contact .button:hover {
+    background: var(--base-color-alt);
+    
+}
+
+
+#contact i {
+    display: block;
+    font-size: 2.4rem;
+    color: var(--base-color);
+}
+
+#contact img {
+    width: 90%;
+    height: 50%;
+}
+
+#contact span {
+    color: var(--base-color);
+}
+
+
+
+/*============== FOOTER ================*/
+footer {
+    background-color: var(--base-color);
+    
+    
+}
+
+
+footer .social {
+    margin-right: 4rem;
+}
+
+footer .card {
+    background-color: var(--base-color);
+  
+}
+
+footer ul li {
+    font: 400 1.6rem 'DM Sans' , sans-serif;
+    color: var(--text-color-light);
+}
+
+
+
+footer i {
+    color: var(--text-color-light);
+    font-size: 2rem;
+    display:inline-block;
+    width: 4.2rem;
+   
+   
+    
+    
+
+} 
+
+
+
+
+/*============== RESPONSIVIDADE-MOBILE-CASO-PRECISE================*/
+/*============== SERVICE================*/
+
+@media (min-width:768px){
+  #services svg {
+        width: 30%;
+    }
+/*============== HOME================*/
+
+    #home a.button {
+        width: 40%;
+     
+        padding: 0rem 8rem;
+      
+    }
+/*============== CONTACT================*/
+  #contact a.button {
+    width: 40%;
+    padding: 0 9rem;
+  }
+}
+
+
+
+
+/*============== NAVIGATION RESPONSIVIDADE 1024PX================*/
+@media (min-width:1024px){
+    
+header#header .container * {
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    display: initial;
+    opacity: initial;
+    flex-direction: initial;
+    position: initial;
+    font-size: initial;
+    font-weight: initial;
+    transform: initial;
+    color: initial;
+    background-color: initial;
+    filter: initial;
+}
+    
+#header nav.container {
+    margin-left: 55rem;
+}
+
+div.toggle.icon-menu::before {
+ 
+   display: none;
+    
+}
+
+div.toggle.icon-close::before{
+
+  display: none;
+}
+
+
+
+
+header#header {
+    height: 8rem;
+}
+
+#header p.logo-in {
+    display: block;
+    font: 700 1.8rem 'Poppins' , sans-serif; 
+    margin-left: -52rem;
+
+    margin-top: 2.7rem;
+   
+   
+   
+}
+
+#header a.logo span {
+    display: block;
+    color: var(--base-color);
+    margin-left: -52rem;
+   margin-top: -3.5rem;
+    
+    font: 700 3.8rem 'Poppins' , sans-serif;
+}
+ 
+
+#header ul.grid li a {
+   display:inline-block;
+    margin-right: 2rem;
+    color: var(--base-color);
+    font-size: 1.8rem;
+    
+   
+}
+  
+#header ul.grid li a:hover {
+    background-color: black;
+    border-radius: 0.5rem;
+    
+}
+  
+#header a.title::after {
+    display: none;
+  }
+
+/*============== HOME================*/  
+
+.col-a {
+    grid-area: A;
+    
+  }
+
+.col-b {
+    grid-area: B;
+    width: 35rem;
+    
+}
+
+#home .container-grid {
+grid-template-areas:
+    'A B'
+    'C C';
+  }
+
+#home div.col-a {
+    grid-area: A;
+    margin-top: -32rem;
+}
+
+/* #home div.image::before {
+    content: '';
+    height: 90%;
+    width: 90rem;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -15%;
+    left: -52rem;
+    z-index: 0;
+  
+} */
+
+
+#home h2.title {
+    margin-top: 10rem;
+    margin-left: 10rem;
+    font: 700 2rem "Poppins" , sans-serif;
+}
+
+#home p {
+    text-align: center;
+    margin-left: 24rem;
+}
+
+#home a.button {
+    width: 25rem;
+    padding: 0 6rem;
+    margin-left: 15rem;
+    cursor: pointer;
+
+}
+
+.divider-1 {
+    height: 1px;
+    background: linear-gradient(
+    270deg, 
+    hsla(var(--hue), 36%, 57%, 1) 
+    hsla(var(--hue), 65%, 88%, 0.34) 
+    );
+}
+
+/*==============ABOUT================*/ 
+
+#about div.col-a {
+    width: 45rem;
+}
+
+
+#about img {
+    margin-top: -17.8rem;
+}
+
+
+/*==============SERVICES================*/ 
+
+#services div.card {
+    width: 90%;
+  
+}
+
+#services p {
+    font: 400 1.6rem 'DM Sans' , sans-serif;
+}
+
+
+
+
+
+
+
+/*==============CONTACT================*/   
+
+#contact img {
+   width: 40rem;
+   height: 35rem;
+   margin-left: 60rem;
+   margin-top: -37rem;
+}
+
+#contact a.button {
+    width: 25%;
+    padding: 0 6.5rem;
+}
+
+}
+
+/*==============RESPONSIVIDADE MEDIA QUERIES 1200px================*/   
+
+
+@media (min-width:1200px) {
+    
+#header nav.container {
+ margin-left: 65rem;
+}
+
+#header a.logo-in {
+    font: 700 2.1rem 'Poppins' , sans-serif; 
+    color: var(--title-color);
+    margin-left: -57rem;
+
+ }   
+
+ 
+/*=============HOME=================*/
+
+/* #home div.image::before {
+    content: '';
+    height: 90%;
+    width: 85%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -15%;
+    left: -15rem;
+    z-index: 0;
+  
+} */
+  
+/*=============ABOUT=================*/
+#about img {
+    margin-left: 15rem;
+}
+
+/* #about div.image::before {
+    content: '';
+    height: 95%;
+    width: 23rem;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -40%;
+    left: 0;
+    z-index: 0;
+    margin-top: -33rem;
+    margin-left: 15rem ;
+    border-radius: 0.1;
+  
+} */
+
+/*=============CONTACT=================*/
+#contact img {
+    width: 40rem;
+    height: 35rem;
+    margin-left: 75rem;
+    margin-top: -49rem;
+ }
+
+#contact a.button {
+    width: 20%;
+    padding: 0rem 6rem;
+}
+}
+
+
