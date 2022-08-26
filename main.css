@@ -246,7 +246,8 @@ nav.show .menu {
 }
 
 nav.show ul.grid {
-    gap: 4.8rem;
+    gap: 9rem;
+    margin-top: 10rem;
     
     
 }
@@ -520,6 +521,11 @@ footer i {
   #services svg {
         width: 30%;
     }
+
+    body {
+        font-size: 2rem;
+    }
+
 /*============== HOME================*/
 
     #home a.button {
@@ -529,10 +535,15 @@ footer i {
       
     }
 /*============== CONTACT================*/
-  #contact a.button {
-    width: 40%;
-    padding: 0 9rem;
-  }
+    #contact a.button {
+        width: 40%;
+        padding: 0 9rem;
+    }
+
+    nav.show ul.grid {
+        gap: 12rem;
+        margin-top: 10rem;
+    }   
 }
 
 
